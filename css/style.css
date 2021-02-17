@@ -351,3 +351,36 @@ h1 {
   color: var(--bright);
 }
 /* ================================ COMMON END ========================================== */
+
+/* ================================ HEADER START ========================================== */
+.header {
+  margin-top: 40px;
+  background-color: var(--bright);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar,
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  padding: 10px 0;
+  transition: 0.25s;
+}
+
+.nav > :nth-child(n + 2) {
+  margin-left: 32px;
+}
+
+.nav a:hover {
+  color: var(--system-color);
+}
+/* ================================ HEADER END ========================================== */
