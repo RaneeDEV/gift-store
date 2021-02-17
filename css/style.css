@@ -274,6 +274,7 @@ h1 {
 
 .title.bold {
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .text {
@@ -321,7 +322,9 @@ h1 {
 }
 
 .button.dark-btn {
+  padding: 14px 35px;
   background-color: var(--darkness);
+  margin-right: 16px;
 }
 
 .button.dark-btn.transparent {
@@ -464,3 +467,16 @@ h1 {
   box-shadow: 12px 15px 30px -7px var(--shadow);
 }
 /* ================================ ABOUT END ========================================== */
+
+/* ================================ BANNER END ========================================== */
+.banner{
+  padding: 75px 0;
+  background-color: var(--system-color);
+}
+
+.banner-cont-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* ================================ BANNER END ========================================== */
