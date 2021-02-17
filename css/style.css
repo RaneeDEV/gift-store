@@ -257,12 +257,14 @@ h1 {
   font-size: 56px;
   line-height: 1.22;
   font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .title {
   font-size: 32px;
   line-height: 1.4;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -295,8 +297,7 @@ h1 {
 }
 
 .button {
-  min-width: 200px;
-  padding: 15px 0;
+  padding: 15px 25px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -309,14 +310,14 @@ h1 {
 }
 
 .button.transparent-small {
-  min-width: 150px;
+  padding: 12px 20px;
   background-color: transparent;
   color: var(--system-color);
   border: 1px solid var(--system-color);
 }
 
 .button.transparent-small.big {
-  min-width: 200px;
+  padding: 15px 25px;
 }
 
 .button.dark-btn {
@@ -354,7 +355,7 @@ h1 {
 
 /* ================================ HEADER START ========================================== */
 .header {
-  margin-top: 40px;
+  margin: 40px 0;
   background-color: var(--bright);
 }
 
@@ -373,7 +374,6 @@ h1 {
 
 .nav a {
   padding: 10px 0;
-  transition: 0.25s;
 }
 
 .nav > :nth-child(n + 2) {
@@ -382,5 +382,36 @@ h1 {
 
 .nav a:hover {
   color: var(--system-color);
+}
+/* ================================ HEADER END ========================================== */
+
+/* ================================ HEADER END ========================================== */
+.hero {
+  background-color: var(--bright-gray);
+}
+
+.hero-side-wrap > :nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.hero-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-side-inf {
+  width: 430px;
+}
+
+.hero-side img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  margin-bottom: 50px;
+  text-align: justify;
 }
 /* ================================ HEADER END ========================================== */
