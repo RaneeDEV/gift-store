@@ -234,6 +234,7 @@ body {
   --bright-black: hsl(calc(var(--hue) + 345), 6%, 13%);
   --bright-gray: hsl(calc(var(--hue) + 240), 4%, 95%);
   --system-color: hsl(calc(var(--hue) + 33), 93%, 54%);
+  --shadow: rgba(0, 0, 0, 0.1);
   --system-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -291,10 +292,16 @@ h1 {
 
 .text.link.font {
   font-family: "Gilroy";
+  font-size: 18px;
 }
 
 .text.link.font.bold {
   font-weight: 700;
+}
+
+.titles-center{
+  text-align: center;
+  margin-bottom: 65px;
 }
 
 .button {
@@ -425,11 +432,6 @@ h1 {
   padding-bottom: 137px;
 }
 
-.about-inf-wrap{
-  text-align: center;
-  margin-bottom: 65px;
-}
-
 .about-card-wrap{
   display: flex;
   align-items: center;
@@ -463,12 +465,11 @@ h1 {
 
 .about-card:hover{
   background-color: var(--bright);
-  --shadow: rgba(0, 0, 0, 0.1);
   box-shadow: 12px 15px 30px -7px var(--shadow);
 }
 /* ================================ ABOUT END ========================================== */
 
-/* ================================ BANNER END ========================================== */
+/* ================================ BANNER START ========================================== */
 .banner{
   padding: 75px 0;
   background-color: var(--system-color);
@@ -480,3 +481,64 @@ h1 {
   justify-content: space-around;
 }
 /* ================================ BANNER END ========================================== */
+
+/* ================================ BLOG START ========================================== */
+.blog{
+  padding: 85px 0;
+}
+
+.gallery-blog{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  background-color: var(--bright-black);
+  color: var(--bright);
+}
+
+.gallery-inf-wrap{
+  margin-right: 15%;
+}
+
+.gallery-title{
+  width: 500px;
+  font-size: 48px;
+  margin-top: 27px;
+  margin-bottom: 60px;
+}
+
+.member-text{
+  font-size: 14px;
+}
+
+.blog-cards-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-card{
+  width: 570px;
+  padding: 45px;
+  transition: .25s;
+  background-color: var(--bright);
+}
+
+.blog-card-title{
+  font-size: 24px;
+}
+
+.blog-card-text{
+  margin-top: 16px;
+  margin-bottom: 50px;
+}
+
+.blog-card:hover{
+  box-shadow: 12px 15px 30px -7px var(--shadow);
+}
+
+.text.link.font:hover, .blog-card-link:hover{
+  text-decoration: underline;
+}
+/* ================================ BLOG END ========================================== */
+
