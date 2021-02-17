@@ -415,3 +415,52 @@ h1 {
   text-align: justify;
 }
 /* ================================ HEADER END ========================================== */
+
+/* ================================ ABOUT START ========================================== */
+.about{
+  padding-top: 100px;
+  padding-bottom: 137px;
+}
+
+.about-inf-wrap{
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.about-card-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-card{
+  width: 270px;
+  background-color: var(--bright-gray);
+  transition: .25s;
+}
+
+.about-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-card-inf{
+  padding: 25px;
+}
+
+.about-card-subt{
+  margin-bottom: 75px;
+}
+
+.about-card-link:hover{
+  text-decoration: underline;
+  color: var(--system-color);
+}
+
+.about-card:hover{
+  background-color: var(--bright);
+  --shadow: rgba(0, 0, 0, 0.1);
+  box-shadow: 12px 15px 30px -7px var(--shadow);
+}
+/* ================================ ABOUT END ========================================== */
