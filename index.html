@@ -5,7 +5,13 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="preload"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/brands.css"
+      as="style"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/fontawesome.css"
       as="style"
       crossorigin
     />
@@ -20,8 +26,14 @@
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/brands.css"
+      integrity="sha384-RTi1U6SIW2G3kUi5NslKQjA34F8CsQCVduJO50jqtxhR2KY++LR7KZS2886EwXrk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/fontawesome.css"
+      integrity="sha384-Hx1dya9ptAdKu2hLNR5C2Cwgm+wCfwD0VMGE6jk5OUxxa9I58YfxOCwEtRog+3wk"
       crossorigin="anonymous"
     />
   </head>
@@ -29,10 +41,10 @@
     <header class="header">
       <div class="container header-cont">
         <nav class="navbar">
-          <a href="index.html" class="logo" title="Home Page">
+          <a href="index.html" class="logo">
             <img
               src="./img/logo.webp"
-              alt="Gift Store Logo"
+              alt="Header Gift Store Logo"
               width="1"
               height="1"
               loading="lazy"
@@ -50,45 +62,41 @@
     </header>
     <section class="hero">
       <div class="container big-cont">
-        <div class="hero-side-wrap">
-          <div class="hero-side one">
-            <div class="hero-side-inf">
-              <h1>Find a gift for your wife or girlfriend</h1>
-              <p class="text hero-text">
-                Struggling to find a gift for your wife or <br />
-                girlfriend? No problem!
-              </p>
-              <button class="button">Find gift now</button>
-            </div>
-            <img
-              src="./img/hero-big-img.webp"
-              alt="Hero Big Image"
-              width="1"
-              height="1"
-              loading="lazy"
-            />
+        <div class="hero-side">
+          <div class="hero-side-inf">
+            <h1>Find a gift for your wife or girlfriend</h1>
+            <p class="text hero-text">
+              Struggling to find a gift for your wife or <br />
+              girlfriend? No problem!
+            </p>
+            <button class="button">Find gift now</button>
           </div>
-          <div class="hero-side two">
-            <div class="hero-side-inf">
-              <h2 class="title">How we work</h2>
-              <p class="text hero-text">
-                We’ve actually already asked hundreds of women what they want,
-                and made a database with the results. All you have to do is take
-                our short survey that only takes seconds, and our proprietary
-                algorithm will match you with a few perfect gift options.
-              </p>
-              <button class="button transparent-small big">
-                Find gift now
-              </button>
-            </div>
-            <img
-              src="./img/hero-small-img.webp"
-              alt="Hero Small Image"
-              width="1"
-              height="1"
-              loading="lazy"
-            />
+          <img
+            src="./img/hero-big-img.webp"
+            alt="Hero Big Image"
+            width="1"
+            height="1"
+            loading="lazy"
+          />
+        </div>
+        <div class="hero-side reverse">
+          <div class="hero-side-inf">
+            <h2 class="title">How we work</h2>
+            <p class="text hero-text">
+              We’ve actually already asked hundreds of women what they want, and
+              made a database with the results. All you have to do is take our
+              short survey that only takes seconds, and our proprietary
+              algorithm will match you with a few perfect gift options.
+            </p>
+            <button class="button transparent-small big">Find gift now</button>
           </div>
+          <img
+            src="./img/hero-small-img.webp"
+            alt="Hero Small Image"
+            width="1"
+            height="1"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
@@ -160,8 +168,8 @@
       <div class="container">
         <div class="banner-cont-wrap">
           <div class="banner-inf">
-            <h2 class="title bold">Ready to get started?</h2>
-            <h3 class="title">Sign up or contact us</h3>
+            <h2 class="banner-title">Sign up or contact us</h2>
+            <h3 class="banner-title bold">Ready to get started?</h3>
           </div>
           <div class="banner-btns">
             <button class="button dark-btn">Find gift now</button>
@@ -179,19 +187,25 @@
           </p>
         </div>
         <div class="gallery-blog">
-          <img src="./img/blog-img.webp" alt="Blog Banner Image" />
+          <img
+            src="./img/blog-img.webp"
+            alt="Blog Banner Image"
+            width="1"
+            height="1"
+            loading="lazy"
+          />
           <div class="gallery-inf-wrap">
-            <p class="text member-text">Mr. John Doe</p>
-            <h3 class="title gallery-title">The best way to wish your wife</h3>
+            <h3 class="text member-text">Mr. John Doe</h3>
+            <h4 class="title gallery-title">The best way to wish your wife</h4>
             <a href="#" class="text link font">Read More</a>
           </div>
         </div>
         <div class="blog-cards-wrap">
           <div class="blog-card">
-            <h4 class="blog-card-title title bold">
+            <h5 class="blog-card-title title bold">
               Database to find the gifts for your <br />
               girlfriend
-            </h4>
+            </h5>
             <p class="blog-card-text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore...
@@ -199,9 +213,9 @@
             <a href="#" class="blog-card-link">Read More</a>
           </div>
           <div class="blog-card">
-            <h4 class="blog-card-title title bold">
+            <h5 class="blog-card-title title bold">
               How Artificial Intelligence read your mind to find the best gift
-            </h4>
+            </h5>
             <p class="blog-card-text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore...
@@ -217,11 +231,16 @@
           <ul class="footer-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-          </ul>
-          <a href="index.html" class="logo footer-logo">
-            <img src="./img/footer-logo.webp" alt="Gift Store Footer Logo" />
-          </a>
-          <ul class="footer-nav">
+            <li>
+              <a href="index.html" class="footer-logo"
+                ><img
+                  src="./img/footer-logo.webp"
+                  alt="Footer Gift Store Logo"
+                  width="1"
+                  height="1"
+                  loading="lazy"
+              /></a>
+            </li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Blog</a></li>
           </ul>

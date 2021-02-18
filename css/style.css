@@ -264,7 +264,6 @@ h1 {
 .title {
   font-size: 32px;
   line-height: 1.4;
-  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -281,13 +280,13 @@ h1 {
 .text {
   font-size: 18px;
   line-height: 1.35;
-  font-weight: 400;
 }
 
 .text.link {
   font-family: "Roboto";
   line-height: 1.4;
   font-size: 14px;
+  margin-top: auto;
 }
 
 .text.link.font {
@@ -306,7 +305,6 @@ h1 {
 
 .button {
   padding: 15px 25px;
-  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   color: var(--bright);
@@ -365,13 +363,13 @@ h1 {
 
 /* ================================ HEADER START ========================================== */
 .header {
-  margin: 40px 0;
+  padding: 40px 0;
   background-color: var(--bright);
 }
 
 .logo img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -410,16 +408,13 @@ h1 {
   justify-content: space-between;
 }
 
-.hero-side.one{
-  margin-left: 10%;
-}
-
-.hero-side.two{
-  margin-right: 12%;
+.hero-side.reverse{
+  flex-direction: row-reverse;
 }
 
 .hero-side-inf {
-  width: 430px;
+  width: 50%;
+  padding: 130px;
 }
 
 .hero-side img {
@@ -442,23 +437,28 @@ h1 {
 
 .about-card-wrap{
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .about-card{
+  display: flex;
+  flex-direction: column;
   width: 270px;
+  min-height: 430px;
   background-color: var(--bright-gray);
   transition: .25s;
 }
 
 .about-card img{
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
 .about-card-inf{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 25px;
 }
 
@@ -483,6 +483,21 @@ h1 {
   background-color: var(--system-color);
 }
 
+.banner-inf{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 30%;
+}
+
+.banner-title{
+  font-size: 32px;
+}
+
+.banner-title.bold{
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 .banner-cont-wrap{
   display: flex;
   align-items: center;
@@ -498,14 +513,16 @@ h1 {
 .gallery-blog{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 40px;
   background-color: var(--bright-black);
   color: var(--bright);
 }
 
-.gallery-inf-wrap{
-  margin-right: 15%;
+.gallery-blog img{
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 75px;
 }
 
 .gallery-title{
@@ -560,7 +577,17 @@ h1 {
 .footer-navbar, .footer-nav{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.footer-nav img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer-logo{
+  margin: 0 80px;
 }
 
 .footer-navbar{
